@@ -12,6 +12,14 @@
 	
 	<a href="result01">model객체 사용</a>
 	<a href="result02">modeAndView객체 사용</a>
+	
+	<a href="result03?num=10">modelAttr단일값</a>
+	
+	<form action="result04" method="post">
+		<input type="text" name="name">
+		<input type="number" name="age">
+		<input type="submit" name="modelAttr객체">
+	</form>
 
 </body>
 </html>

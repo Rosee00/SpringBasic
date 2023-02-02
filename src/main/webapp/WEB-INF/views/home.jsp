@@ -6,6 +6,8 @@
 <body>
 <h1>
 	Hello world!  
+	
+	${msg }
 </h1>
 
 </body>

@@ -17,13 +17,14 @@ import org.springframework.web.bind.annotation.RequestMethod;
 @Controller
 public class HomeController {
 	
-	//로그 출력기능 - 패키지별로 등록을 해줘야 하는데 log4j.xml에 등록
+	//로그 출력기능 - 패키지별로 등록을 해줘야 하는데 log4j.xml에 등록???
 	//private static final Logger logger = LoggerFactory.getLogger(HomeController.class);
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) {
 		//logger.info("Welcome home! The client locale is {}.", locale);
 		
+		System.out.println("home실행됨");
 		
 		
 		return "home";
