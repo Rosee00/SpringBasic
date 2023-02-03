@@ -1,0 +1,8 @@
+
+create table score (
+	num int primary key auto_increment,
+    name varchar(30) not null,
+    kor int default 0,
+    eng int default 0
+);
+

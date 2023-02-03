@@ -118,15 +118,68 @@
 			<version>1.2</version>
 		</dependency>
 	
-		<!-- Test -->
+		       
+	
+		<!-- 스프링 JDBC를 하기위한 필요 라이브러리 0203 -->
+		<!-- 오라클커넥터 -->
+		<dependency>
+		    <groupId>com.oracle.database.jdbc</groupId>
+		    <artifactId>ojdbc8</artifactId>
+		    <version>21.1.0.0</version>
+		</dependency>
+		<!-- mysql커넥터 -->
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.32</version>
+		</dependency>
+	
+		<!-- 스프링 jdbc모듈 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>${org.springframework-version}</version>
+		</dependency>
+		
+		<!-- 하카리 커넥션 풀 -->
+		<dependency>
+		    <groupId>com.zaxxer</groupId>
+		    <artifactId>HikariCP</artifactId>
+		    <version>3.3.1</version>
+		</dependency>
+		
+		<!-- 테스트환경 : spring-test모듈 and junit기능 -->
+		<dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-test</artifactId>
+		    <version>${org.springframework-version}</version>
+		    <scope>test</scope>
+		</dependency>
+		<!-- Test버전은 최소 4.12이상 -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.7</version>
+			<version>4.12</version>
 			<scope>test</scope>
-		</dependency>        
-	</dependencies>
+		</dependency> 
+		
+		<!-- 마이바티스 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis</artifactId>
+		    <version>3.5.6</version>
+		</dependency>
+		
+		<!-- 마이바티스-스프링 -->
+		<dependency>
+		    <groupId>org.mybatis</groupId>
+		    <artifactId>mybatis-spring</artifactId>
+		    <version>2.0.6</version>
+		</dependency>
 	
+	
+	
+	</dependencies>
 	<!-- 메이븐 설정 - 메이븐 컴파일버전 3.8.1변경, 컴파일 자바 레벨11 -->
     <build>
         <plugins>

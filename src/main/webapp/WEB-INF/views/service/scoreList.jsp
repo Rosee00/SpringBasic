@@ -13,11 +13,11 @@
 	<h3>목록화면</h3>
 	<!-- 향상된for문 -->
 	<c:forEach var="article" items="${list }" varStatus="num">
-		${num.index }<!-- 인덱스번호 -->
+		${article.num }<!-- 인덱스번호 -->
 		${article.name }
 		${article.kor }
 		${article.eng }
-		<a href="delete?num=${num.index }">삭제</a> <!-- 삭제는 post방식 -->
+		<a href="delete?num=${article.num } ">삭제</a> <!-- 삭제는 post방식 -->
 		<br/>
 	</c:forEach>
 

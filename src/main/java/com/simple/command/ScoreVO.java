@@ -2,45 +2,62 @@ package com.simple.command;
 
 public class ScoreVO {
 	
+	private int num;
 	private String name;
 	private String kor;
 	private String eng;
 	
+	//기본
 	public ScoreVO() {
-	}	
-	
-	public ScoreVO(String name, String kor, String eng) {
+	}
+
+	//생성자
+	public ScoreVO(int num, String name, String kor, String eng) {
 		super();
+		this.num = num;
 		this.name = name;
 		this.kor = kor;
 		this.eng = eng;
 	}
 
-
+	//get, set
 	@Override
 	public String toString() {
-		return "ScoreVO [name=" + name + ", kor=" + kor + ", eng=" + eng + "]";
+		return "ScoreVO [num=" + num + ", name=" + name + ", kor=" + kor + ", eng=" + eng + "]";
 	}
 
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		this.num = num;
+	}
 
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getKor() {
 		return kor;
 	}
+
 	public void setKor(String kor) {
 		this.kor = kor;
 	}
+
 	public String getEng() {
 		return eng;
 	}
+
 	public void setEng(String eng) {
 		this.eng = eng;
-	}
+	}	
+	
 	
 	
 
